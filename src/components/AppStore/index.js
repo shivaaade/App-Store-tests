@@ -329,7 +329,7 @@ class AppStore extends Component {
         <ul>
           {tabsList.map(each => (
             <TabItem
-              key={appTabDetails.tabId}
+              key={each.tabId}
               finalApps={this.finalApps}
               appTabDetails={each}
             />
@@ -338,7 +338,7 @@ class AppStore extends Component {
 
         <ul>
           {finalFilter.map(each => (
-            <AppItem key={appDetails.appId} appDetails={each} />
+            <AppItem key={each.appId} appDetails={each} />
           ))}
         </ul>
       </div>
